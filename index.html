@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fallbacks for CSS variables -->
+    <script>
+      window.MSInputMethodContext &&
+        document.documentMode &&
+        document.write(
+          '<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\x2fscript>'
+        );
+    </script>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="tagline">My Simple Calculator</h1>
+    </header>
+    <main>
+      <div class="calculator-wrapper">
+        <div class="row screen">
+          <!-- There is a little icon here -->
+          0
+        </div>
+        <div class="row first">
+          <div class="col-1-2">C</div>
+          <div class="col-2-3">/</div>
+          <div class="col-3-4">*</div>
+          <div class="col-4">
+            <img src="./images/delete.svg" alt="delete" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1-2">7</div>
+          <div class="col-2-3">8</div>
+          <div class="col-3-4">9</div>
+          <div class="col-4">+</div>
+        </div>
+        <div class="row">
+          <div class="col-1-2">4</div>
+          <div class="col-2-3">5</div>
+          <div class="col-3-4">6</div>
+          <div class="col-4">-</div>
+        </div>
+        <div class="row">
+          <div class="col-1-2">1</div>
+          <div class="col-2-3">2</div>
+          <div class="col-3-4">3</div>
+          <div class="col-4 equal">=</div>
+        </div>
+        <div class="row">
+          <div class="col-1-3">0</div>
+          <div class="col-3-4">,</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        A Daily UI #dailyUI4 challenge by
+        <a href="https://twitter.com/GalStormie">StormieGal</a>
+      </p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
